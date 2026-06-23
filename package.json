@@ -1,0 +1,37 @@
+{
+  "name": "runforge",
+  "version": "1.0.0",
+  "description": "An agentic AI system that ingests CloudWatch/Datadog alerts and automatically generates incident runbooks using RAG, pgvector similarity search, and ReAct-pattern tool-calling.",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "api:dev": "npm run dev --workspace=apps/api",
+    "web:dev": "npm run dev --workspace=apps/web",
+    "api:build": "npm run build --workspace=apps/api",
+    "web:build": "npm run build --workspace=apps/web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theajinkya108/runforge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/theajinkya108/runforge/issues"
+  },
+  "homepage": "https://github.com/theajinkya108/runforge#readme",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.1"
+  }
+}
